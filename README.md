@@ -1,3 +1,9 @@
+# SimCA-SLAM
+
+Lightweight framework for 2D LiDAR-based active multi-agent SLAM.
+
+Simulated Collaborative Active SLAM => SimCA-SLAM (simca_slam).
+
 ## Create a python environment with the necessary packages
         
     python3 -m venv ~/.venvs/simca-env
@@ -18,33 +24,48 @@ Then build:
 
     colcon build --symlink-install --packages-select simca_interface --allow-overriding simca_interface
 
-## Simulation-based Collaborative Active SLAM workspace
-
-Simulated Collaborative Active SLAM => SimCA-SLAM (simca_slam)
-
-
-### Workspace composition:
+## Workspace composition:
 
 Parent folder: /SimCA-SLAM
     
-/arenas                     Folder where are saved the newly generated arenas (2D environment for the simulation).
-generate_arena2d.py         Generates a new random arena for the simulation. Uses Perlin noise for the obstacle distribution.
+    /arenas
+Folder where are saved the newly generated arenas (2D environment for the simulation).
 
-cohort_config.csv           Configuration file that defines every parameters for each robot in the cohort.
-livesim_assets.py           Defines all objects featured during simulation time.
-start_livesim.py            Loads parameters, initializes and launches the simulated environment.
+    generate_arena2d.py
+Generates a new random arena for the simulation. Uses Perlin noise for the obstacle distribution.
 
-rviz_config.rviz            RViz startup configuration file.
-slam_params.yaml            Parameters that will be used by SLAM Toolbox for each SLAM process.
-launch_slam.py              Launches all individual SLAM instances in parallel. 
+    cohort_config.csv
+Configuration file that defines every parameters for each robot in the cohort.
 
-launch_cmon.py              Launches the centralized monitoring system on top of the SLAM processes.
+    livesim_assets.py
+Defines all objects featured during simulation time.
 
-/sim_results                Folder where are saved the mapping results.
-save_mapping.py             Saves all generated maps at the end of the SLAM processes.
+    start_livesim.py
+Loads parameters, initializes and launches the simulated environment.
 
-/simca_interface            Must be built as an external package (in the ROS2 workspace) to hold the 'ObservationSet' and 'ControlSet' messages.
-/slam\_toolbox\_launch      The file it contains must be copied to the ‘launch’ folder of the slam_toolbox package (built from source).
+    rviz_config.rviz
+RViz startup configuration file.
+
+    slam_params.yaml
+Parameters that will be used by SLAM Toolbox for each SLAM process.
+
+    launch_slam.py
+Launches all individual SLAM instances in parallel. 
+
+    launch_cmon.py
+Launches the centralized monitoring system on top of the SLAM processes.
+
+    /sim_results
+Folder where are saved the mapping results.
+
+    save_mapping.py
+Saves all generated maps at the end of the SLAM processes.
+
+    /simca_interface
+Must be built as an external package (in the ROS2 workspace) to hold the 'ObservationSet' and 'ControlSet' messages.
+
+    /slam_toolbox_launch
+The file it contains must be copied to the ‘launch’ folder of the slam_toolbox package (built from source).
 
 
 ### Protocol to launch a simulation:
