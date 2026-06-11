@@ -4,7 +4,9 @@ Lightweight framework for 2D LiDAR-based active multi-agent SLAM.
 
 Simulated Collaborative Active SLAM => SimCA-SLAM (simca_slam).
 
-## Create a python environment with the necessary packages
+Parent folder: /SimCA-SLAM
+
+## Create a python environment with the necessary packages in the parent folder
         
     python3 -m venv ~/.venvs/simca-env
     source "$HOME/.venvs/simca-env/bin/activate"
@@ -25,8 +27,6 @@ Then build:
     colcon build --symlink-install --packages-select simca_interface --allow-overriding simca_interface
 
 ## Workspace composition:
-
-Parent folder: /SimCA-SLAM
     
     /arenas
 Folder where are saved the newly generated arenas (2D environment for the simulation).
