@@ -4,7 +4,7 @@ Lightweight framework for 2D LiDAR-based active multi-agent SLAM.
 
 Simulated Collaborative Active SLAM => SimCA-SLAM (simca_slam).
 
-Overview of the framework, with simulated environment on the left, and centralized monitoring system on the right:![Env. VS CMS](/images/env_vs_cms.png)
+Overview of the framework, with simulated environment (left) and centralized monitoring system (right):![Env. VS CMS](/images/env_vs_cms.png)
 
 Parent folder: /SimCA-SLAM
 
