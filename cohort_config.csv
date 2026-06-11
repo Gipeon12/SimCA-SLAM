@@ -1,0 +1,7 @@
+id_num,color_tag,core_radius,laser_limit,lidar_points,max_speed,max_accel,rob_mass,vmp_xset,detec_thresh,bias_coeff,error_coeff
+1,red,0.16,1.6,360,0.4,0.6,2,0.08,0.6,0.01,0.02
+2,green    ,0.16,1.6,360,0.4,0.6,2,0.08,0.6,0.01,0.02
+3,blue     ,0.16,1.6,360,0.4,0.6,2,0.08,0.6,0.01,0.02
+4,orange   ,0.16,1.6,360,0.4,0.6,2,0.08,0.6,0.01,0.02
+5,yellow   ,0.16,1.6,360,0.4,0.6,2,0.08,0.6,0.01,0.02
+6,purple   ,0.16,1.6,360,0.4,0.6,2,0.08,0.6,0.01,0.02
